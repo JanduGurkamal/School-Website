@@ -264,10 +264,12 @@ a {
     display: flex;
     justify-content: flex-end;
     vertical-align: bottom;
+    max-width: 225px;
     flex-direction: column;
     padding: 30px;
     width: 70%;
     height: 57vh;
+    text-align:center;
     background-repeat: no-repeat;
     margin: 10px;
     background-position: top;
