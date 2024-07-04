@@ -1,29 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 html {
-    scroll-behavior: smooth;            
-    filter: invert(-1);              
-                                                                     
-  }
-  body{
+    scroll-behavior: smooth;
+}
+
+body {
     -ms-overflow-style: none;
     overflow-x: hidden;
-  }
-
-  body::-webkit-scrollbar {
-    display: none;}
-
-.nav-bar ul{
- list-style-type: none;
- display: flex;
- justify-content: center;
- flex-direction: row;
-
 }
-a{
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+a {
     text-decoration: none;
     color: unset;
 }
@@ -32,144 +32,89 @@ a{
     left: -45%;
 }
 
-.nav-bar ul li :nth-child(1)
-{
-    margin-left: -45%;
-}
-
-.nav-bar ul li:nth-child(1){
+.nav-bar ul li:nth-child(1),
+.nav-bar ul li:nth-child(2),
+.nav-bar ul li:nth-child(3),
+.nav-bar ul li:nth-child(4),
+.nav-bar ul li:nth-child(5) {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: 2rem;
+    margin-right: 50px;
     font-weight: 400;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
 }
 
-.nav-bar ul li:nth-child(2){
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: 2rem;
-    font-weight: 400;
-    padding: 1rem;
-}
-
-.nav-bar ul li:nth-child(3){
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: 2rem;
-    font-weight: 400;
-    padding: 1rem;
-}
-
-.nav-bar ul li:nth-child(4){
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: 2rem;
-    font-weight: 400;
-    padding: 1rem;
-}
-
-.nav-bar ul li:nth-child(5){
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-right: 2rem;
-    font-weight: 400;
-    padding: 1rem;
-}
-
-
-.nav-bar .hover-line1::after{
+.nav-bar .hover-line1::after,
+.nav-bar .hover-line2::after,
+.nav-bar .hover-line3::after,
+.nav-bar .hover-line4::after,
+.nav-bar .hover-line5::after {
     content: '';
-    width: 5%;
     position: absolute;
     background-color: #FFF;
-    bottom: 0rem;
-    left: 20rem;
-    background: #FFF;
+    bottom: 0;
     height: 0.2rem;
+    margin-left: -0.25%;
     transition: all 0.3s;
 }
-.nav-bar .hover-line2::after{
-    content: '';
-    width: 11%;
-    position: absolute;
-    background-color: #FFF;
-    bottom: 0rem;
-    left: 27rem;
-    background: #FFF;
-    height: 0.2rem;
-    transition: all 0.3s;
+
+.nav-bar .hover-line1::after {
+    width: 4%;
 }
-.nav-bar .hover-line3::after{
-    content: '';
+
+.nav-bar .hover-line2::after {
+    width: 10.8%;
+}
+
+.nav-bar .hover-line3::after {
     width: 6%;
-    position: absolute;
-    background-color: #FFF;
-    bottom: 0rem;
-    left: 39.8rem;
-    background: #FFF;
-    height: 0.2rem;
-    transition: all 0.3s;
-}
-.nav-bar .hover-line4::after{
-    content: '';
-    width: 11%;
-    position: absolute;
-    background-color: #FFF;
-    bottom: 0rem;
-    left: 48rem;
-    background: #FFF;
-    height: 0.2rem;
-    transition: all 0.3s;
-}
-.nav-bar .hover-line5::after{
-    content: '';
-    width: 6.4%;
-    position: absolute;
-    background-color: #FFF;
-    bottom: 0rem;
-    left: 60.5rem;
-    background: #FFF;
-    height: 0.2rem;
-    transition: all 0.3s;
 }
 
-#topp{
+.nav-bar .hover-line4::after {
+    width: 10%;
+}
+
+.nav-bar .hover-line5::after {
+    width: 6.4%;
+}
+
+#topp {
     transition: all 0.3s;
 }
 
 .nav-bar .aa::after {
-   transform: scale(0, 1);
+    transform: scale(0, 1);
 }
 
-.nav-bar .aa:hover::after{
+.nav-bar .aa:hover::after {
     transform: scale(1, 1);
 }
 
-
-.nav-bar{
+.nav-bar {
     background-color: rgba(0, 0, 0, 0.384);
     z-index: 1000;
     position: fixed;
-
-    color: rgb(255, 255, 255);
+    color: #FFF;
     width: 100%;
 }
 
-#section1{
+#section1 {
     width: 100%;
     position: sticky;
-    height: 86vh;
+    height: 90vh;
     background-attachment: fixed;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./mainschl.jpeg");
-   background-size: cover;
-   text-align: center;
-   justify-content: center;
-   background-position: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("mainschl.jpg");
+    background-size: cover;
+    text-align: center;
+    background-position: center;
 }
 
-.motto{
+.motto {
     justify-content: center;
     position: absolute;
     width: 100%;
-
-    color: rgb(255, 255, 255);
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #FFF;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: -450;
     font-size: 2em;
     height: 100%;
@@ -177,47 +122,40 @@ a{
     text-align: center;
 }
 
-.motto h1{
+.motto h1 {
     background-attachment: fixed;
     opacity: 0.8;
 }
 
-
-.dropadmno{
+.dropadmno {
     display: none;
-
-    /* Position it right below the trigger element */
     left: 0;
     padding-top: 4px;
     position: absolute;
     top: 100%;
-
-    /* It should be on the top of other elements */
     background-color: #FFF;
     z-index: 10000;
-
-    /* Size */
     height: 200px;
     width: 200px;
 }
 
-.nav-bar ul li:nth-child(4):hover .dropadmno{
+.nav-bar ul li:nth-child(4):hover .dropadmno {
     display: block;
 }
 
-#instr{
-   justify-content: center;
-   text-align: center;
-   position: sticky;
-   background-attachment: fixed;
-   background-color: rgba(0, 0, 0, 0);
+#instr {
+    justify-content: center;
+    text-align: center;
+    position: sticky;
+    background-attachment: fixed;
+    background-color: rgba(0, 0, 0, 0);
 }
 
-.colored{
+.colored {
     z-index: 9999;
     position: sticky;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background-color:rgba(42, 162, 42, 0.555);
+    background-color: rgba(42, 162, 42, 0.555);
     font-size: larger;
     background-attachment: fixed;
     letter-spacing: 0.6rem;
@@ -231,14 +169,14 @@ a{
     padding: 3px;
     transition: all 0.4s;
     cursor: pointer;
-  }
+}
 
-#arrow:hover{
+#arrow:hover {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
 
-#instr .colored:hover .down{
+#instr .colored:hover .down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
 }
@@ -246,45 +184,43 @@ a{
 .down {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-  }
+}
 
-  .ons{
+.ons {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-  }
+}
 
-#rspnstocv .main{
+#rspnstocv .main {
     font-size: 4rem;
     color: #FFF;
     margin-top: 5rem;
     font-weight: 900;
-
 }
 
-#rspnstocv{
+#rspnstocv {
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-color: rgba(25, 95, 25, 0.788);;
+    background-color: rgba(25, 95, 25, 0.788);
     justify-content: center;
     align-items: center;
     height: 50%;
 }
 
-#rspnstocv .descpm{
+#rspnstocv .descpm {
     font-size: 2rem;
     font-weight: 700;
     margin-top: 2rem;
     color: #FFF;
     text-align: center;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
-.hrefb1{
+.hrefb1 {
     background: rgba(23, 83, 23, 0.781);
     padding: 1rem;
-    border: 0ch;
+    border: none;
     margin-top: 3rem;
     margin-bottom: 5rem;
     font-weight: 800;
@@ -294,280 +230,212 @@ a{
     transition: background-color 0.3s;
 }
 
-
-.hrefb1:hover{
+.hrefb1:hover {
     background: rgba(23, 83, 23, 0.904);
 }
 
-#services{
-    background-color:antiquewhite;
-     height: 100vh;
-     padding-bottom: 7rem;
+#services {
+    background-color: antiquewhite;
+    height: 100vh;
+    padding-bottom: 7rem;
 }
 
-#services .abttop{
-     font-size: 3.5rem;
-     text-align: center;
-     align-items: center;
-     padding-top: 4rem;
-     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-     font-weight: 300;
+#services .abttop {
+    font-size: 3.5rem;
+    text-align: center;
+    align-items: center;
+    padding-top: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
 }
 
-.abttopdec{
+.abttopdec {
     font-size: 2rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: center;
     font-weight: 200;
 }
 
-#services .service-item {
+#services .service-item,
+#services .service-item2,
+#services .service-item3,
+#services .service-item4 {
     background-color: #FFF;
-	display: flex;
-	justify-content:flex-end;
+    display: flex;
+    justify-content: flex-end;
     vertical-align: bottom;
-	flex-direction: column;
-	padding: 30px;
-	width: 70%;
+    flex-direction: column;
+    padding: 30px;
+    width: 70%;
     height: 57vh;
-	background-image: url(./primary1.jpeg);
-	background-size: 50vh;
     background-repeat: no-repeat;
-	margin: 10px;
-    background-position:top;
-	position: relative;
-	z-index: 1;
+    margin: 10px;
+    background-position: top;
+    position: relative;
+    z-index: 1;
     transition: all 0.3s;
-	overflow: hidden;
+    overflow: hidden;
+}
+
+#services .service-item {
+    background-image: url("./service items/5.webp");
+    background-size: 50vh;
 }
 
 #services .service-item2 {
-    background-color: #FFF;
-	display: flex;
-	justify-content:flex-end;
-    vertical-align: bottom;
-	flex-direction: column;
-	padding: 30px;
-	width: 70%;
-    height: 57vh;
-	background-image: url(./primary1.jpeg);
-	background-size: 50vh;
-    background-repeat: no-repeat;
-	margin: 10px;
-    background-position:top;
-	position: relative;
-	z-index: 1;
-    transition: all 0.3s;
-	overflow: hidden;
-}
-#services .service-item3 {
-    background-color: #FFF;
-	display: flex;
-	justify-content:flex-end;
-    vertical-align: bottom;
-	flex-direction: column;
-	padding: 30px;
-	width: 70%;
-    height: 57vh;
-	background-image: url(./images.jpeg);
-	background-size: 47vh;
-    background-repeat: no-repeat;
-	margin: 10px;
-    background-position:top;
-	position: relative;
-	z-index: 1;
-    transition: all 0.3s;
-	overflow: hidden;
-}
-#services .service-item4 {
-    background-color: #FFF;
-	display: flex;
-	justify-content:flex-end;
-    vertical-align: bottom;
-	flex-direction: column;
-	padding: 30px;
-	width: 70%;
-    height: 57vh;
-	background-image: url(./1937419819723502.webp);
-	background-size: 44.5vh;
-    background-repeat: no-repeat;
-	margin: 10px;
-    background-position:top;
-	position: relative;
-	z-index: 1;
-    transition: all 0.3s;
-	overflow: hidden;
+    background-image: url("./service items/2.jpg");
+    background-size: 50vh;
 }
 
-#services .service-bottom{
+#services .service-item3 {
+    background-image: url("./service items/3.jpeg");
+    background-size: 47vh;
+}
+
+#services .service-item4 {
+    background-image: url("./service items/1.jpg");
+    background-size: 44.5vh;
+}
+
+#services .service-bottom {
     display: flex;
     justify-content: center;
-    display: flex;
     margin-top: 3rem;
     width: 100%;
 }
 
-#services .service-bottom h2{
+#services .service-bottom h2 {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 800;
     padding-bottom: 0.6rem;
 }
 
-#services .service-item:hover{
-    background-size: 52vh;
+#services .service-item:hover,
+#services .service-item2:hover,
+#services .service-item3:hover,
+#services .service-item4:hover {
+    background-size: calc(100% + 2vh);
 }
 
-#services .service-item2:hover{
-    background-size: 52vh;
-}#services .service-item3:hover{
-    background-size: 49vh;
-}#services .service-item4:hover{
-    background-size: 46vh;
-}
-
-#topp2{
+#topp2 {
     height: 5.5vh;
     width: 100%;
     display: flex;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
     flex-direction: column;
-    background-color:rgba(0, 128, 0, 0.507);
+    background-color: rgba(0, 128, 0, 0.507);
     z-index: 1000;
 }
 
-.nav-bar1{
+.nav-bar1 {
     justify-content: center;
     vertical-align: middle;
     margin-left: 50%;
 }
 
-.nav-bar1 ul{
+.nav-bar1 ul {
     list-style-type: none;
     display: flex;
     justify-content: center;
     flex-direction: row;
-   }
+}
 
-   .nav-bar1 ul li{
-       padding: 1rem;
-       margin-top: -36px;
+.nav-bar1 ul li {
+    padding: 1rem;
+    margin-top: -36px;
+}
 
-   }
+.brand {
+    margin-top: 10px;
+    margin-left: 30px;
+}
 
-   .brand{
-       margin-top: 10px ;
-       margin-left: 30px;
-   }
+.scrl {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
 
-   .scrl{
-       position: fixed;
-       top: 0;
-       z-index: 1000;
-
-   }
-
-   .abttop{
-       display: flex;
-       flex-direction: row;
-       justify-content: center;
-
-       text-align: center;
-   }
-
-   .abttopdec
-   {
+.abttop,
+.abttopdec {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
     text-align: center;
-   }
-
-
-   #activity .sec3des{
-        font-size: 4rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-weight: 300;
-   }
-
-   #activity{
-       padding-top: 3rem;
-       padding-bottom: 3rem;
-       text-align: center;
-
-   }
-
-   #activity .sec3des2{
-           font-size: 1rem;
-           text-align: center;
-           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-           margin-top: 0.5rem;
-           font-weight: 300;
-           font-size: 4rem;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-   }
-
-#topp2 .nav-bar1 ul li:hover{
-    font-weight: 600;
-    padding: 0.8rem;
-
 }
 
-.nav-bar1 ul li{
+#activity .sec3des {
+    font-size: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+}
+
+#activity {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    text-align: center;
+}
+
+#activity .sec3des2 {
+    font-size: 4rem;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#topp2 .nav-bar1 ul li:hover {
+    font-weight: 600;
+    padding: 0.8rem;
+}
+
+.nav-bar1 ul li {
     transition: all 0.3s;
 }
 
-#topp2 .brand{
+#topp2 .brand {
     letter-spacing: 1rem;
 }
 
-.intro{
-   width: 30rem;
-   margin-top: 6rem;
-   text-align: justify;
-   height: 4rem;
-   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-   margin-left: 3rem;
-}
-
-.intro{
-    background-color: rgb(255, 255, 255);
-
+.intro {
+    width: 30rem;
+    margin-top: 6rem;
+    text-align: justify;
+    height: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 3rem;
+    background-color: #FFF;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.intro p{
-    background-color: rgb(255, 255, 255);
-    padding: 0%;
+.intro p {
+    background-color: #FFF;
+    padding: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-
     padding-bottom: 1rem;
 }
 
 .intro h1 {
     padding: 1rem;
     font-size: 2rem;
-
     padding-left: 1rem;
-    padding-bottom: 0%;
+    padding-bottom: 0;
 }
 
-.intro:hover{
+.intro:hover {
     background-color: rgb(221, 16, 16);
     color: #FFF;
 }
 
-
-.intro:hover p{
+.intro:hover p {
     background-color: rgb(221, 16, 16);
     color: #FFF;
 }
@@ -577,16 +445,16 @@ a{
     height: auto;
     margin-left: 9rem;
     margin-top: 5rem;
-  }
+}
 
-  #activity #mainac{
-      display: flex;
-      flex-direction: row;
-  }
+#activity #mainac {
+    display: flex;
+    flex-direction: row;
+}
 
-#allacts{
+#allacts {
     padding: 2rem;
-    padding-top: 0%;
+    padding-top: 0;
 }
 
 #allacts .intro {
@@ -594,99 +462,93 @@ a{
     margin-left: 7rem;
 }
 
-#mainac .intro .first{
+#mainac .intro .first {
     margin-top: 40rem;
 }
 
-
-
-.introfirst{
-    background-color: rgb(255, 255, 255);
-
+.introfirst {
+    background-color: #FFF;
     cursor: pointer;
     border-radius: 4px;
 }
 
-.introfirst p{
-    background-color: rgb(255, 255, 255);
-    padding: 0%;
+.introfirst p {
+    background-color: #FFF;
+    padding: 0;
     padding-left: 1rem;
     padding-right: 1rem;
-
     padding-bottom: 1rem;
 }
 
 .introfirst h1 {
     padding: 1rem;
-
     font-size: 2rem;
     padding-left: 1rem;
-    padding-bottom: 0%;
+    padding-bottom: 0;
 }
 
-.introfirst{
+.introfirst {
     width: 30rem;
     margin-top: 9rem;
     text-align: justify;
     height: 4rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 3rem;
- }
+}
 
-#activity{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./activity/main.jpg");
-    background-size:auto;
+#activity {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./activity/activity.webp");
+    background-size: auto;
     background-position: center;
     background-repeat: repeat;
     opacity: 0.9;
 }
 
-#footer1{
+#footer1 {
     display: flex;
-   background-color: grey;
-   color: #FFF;
+    background-color: grey;
+    color: #FFF;
     flex-direction: row;
 }
 
-
-.container{
+.container {
     width: 25%;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-left: 1rem;
     padding: 1rem;
+    text-align: center;
+    justify-content: center;
 }
 
-.container h2{
+.container h2 {
     padding-bottom: 0.6rem;
     font-weight: 600;
 }
 
-.container2{
+.container2 {
     width: 15%;
     text-align: center;
     margin-left: 1rem;
-
     padding: 1rem;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     padding-left: 1rem;
 }
 
-
-.container2 h2{
+.container2 h2 {
     font-weight: 600;
     padding-bottom: 0.6rem;
 }
 
-.container2 p{
+.container2 p {
     margin-bottom: 0.7rem;
     transition: all 0.3s;
 }
 
-.container2 a:hover{
+.container2 a:hover {
     font-weight: 300;
 }
 
-#footer{
+#footer {
     background-color: grey;
     justify-content: center;
     text-align: center;
@@ -695,66 +557,41 @@ a{
     color: #FFF;
 }
 
-#footer .con{
- font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- font-size: 1.3rem;
- padding: 1rem;
+#footer .con {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    padding: 1rem;
 }
 
-#mm{
+#mm, #mm2 {
     color: #FFF;
 }
 
-#mm2{
-    color: #FFF;
-}
-
-.container{
-    text-align: center;
-    justify-content: center;
-}
-
-.container p{
-    text-align: justify;
-}
-
-#footer1{
-    justify-content: center;
-}
-
-#footer .icons img{
+#footer .icons img {
     width: 40px;
     height: 40px;
     margin-top: 7px;
-}
-
-.icons img{
     filter: grayscale(1);
     padding: 4px;
     transition: all 0.4s;
 }
 
-.icons img:hover{
+#footer .icons img:hover {
     filter: grayscale(0);
 }
 
-
-@media (max-width: 1080px)
-{
-   #topp2{
-       display: none;
-   }
-
+@media (max-width: 1080px) {
+    #topp2 {
+        display: none;
+    }
 }
 
-@media (max-width: 900px)
-{
-   #topp2{
-       display: none;
-   }
+@media (max-width: 900px) {
+    #topp2 {
+        display: none;
+    }
 
-   .nav-bar ul li{
-       display: none;
-   }
-
+    .nav-bar ul li {
+        display: none;
+    }
 }
