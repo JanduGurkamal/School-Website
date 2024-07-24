@@ -235,7 +235,7 @@ a {
 }
 
 #services {
-    background-color: antiquewhite;
+    background-color: rgba(207, 207, 207, 0.123);
     height: 100vh;
     padding-bottom: 7rem;
 }
@@ -256,6 +256,13 @@ a {
     font-weight: 200;
 }
 
+#services .service-item >h2,
+#services .service-item2 >h2,
+#services .service-item3 >h2 ,
+#services .service-item4 >h2{
+    text-align: center;
+}
+
 #services .service-item,
 #services .service-item2,
 #services .service-item3,
@@ -267,11 +274,12 @@ a {
     max-width: 225px;
     flex-direction: column;
     padding: 30px;
-    width: 70%;
     height: 57vh;
-    text-align:center;
-    background-repeat: no-repeat;
     margin: 10px;
+    width: 80%;
+    box-shadow: 8px 8px 8px rgba(0.1, 0.1, 0.1, 0.1);
+    text-align:justify;
+    background-repeat: no-repeat;
     background-position: top;
     position: relative;
     z-index: 1;
@@ -286,17 +294,17 @@ a {
 
 #services .service-item2 {
     background-image: url("./service items/2.jpg");
-    background-size: 50vh;
+    background-size: 43vh;
 }
 
 #services .service-item3 {
     background-image: url("./service items/3.jpeg");
-    background-size: 47vh;
+    background-size: 43vh;
 }
 
 #services .service-item4 {
     background-image: url("./service items/1.jpg");
-    background-size: 44.5vh;
+    background-size: 44vh;
 }
 
 #services .service-bottom {
@@ -316,7 +324,7 @@ a {
 #services .service-item2:hover,
 #services .service-item3:hover,
 #services .service-item4:hover {
-    background-size: calc(100% + 2vh);
+    background-size: calc(100% + 1.4vh);
 }
 
 #topp2 {
@@ -393,8 +401,7 @@ a {
 }
 
 #topp2 .nav-bar1 ul li:hover {
-    font-weight: 600;
-    padding: 0.8rem;
+    background-color:rgba(2, 56, 2, 0.374);;
 }
 
 .nav-bar1 ul li {
