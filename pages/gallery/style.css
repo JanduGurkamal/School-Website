@@ -1,0 +1,86 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../School site/icons/parents-portal-body.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header .title-button {
+    background-color: #248439;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.header .title-button:hover {
+    background-color: #1d5c35;
+}
+
+.tab-content {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.742);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery-item {
+    max-width: 300px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery-item p {
+    margin: 10px 0;
+    padding: 0 10px;
+    font-size: 1em;
+    color: #333;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Events Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <button class="title-button" onclick="showTab('photoGallery')">Photo Gallery</button>
+            <button class="title-button" onclick="showTab('videoGallery')">Video Gallery</button>
+        </header>
+
+        <main>
+            <div id="photoGallery" class="tab-content active" style="padding-bottom: 60px; padding-top: 60px;">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <img src="photos/thumbnails/Inaugration and Opening.jpeg" alt="Event 1">
+                        <p>Inauguration And Opening Of Junior Wing Block</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/thumbnails/workshop and rewards.jpeg" alt="Event 2">
+                        <p>Workshop On Rewards And Recognition</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/thumbnails/retirement function.jpeg" alt="Event 3">
+                        <p>Retirement Function</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/thumbnails/badmintion.jpeg" alt="Event 4">
+                        <p>CISCE Badminton Zonal Level Tournament 2024</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/thumbnails/investiture ceremont.jpeg" alt="Event 5">
+                        <p>Investiture Ceremony 2024-25</p>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="photos/thumbnails/christmas function.jpeg" alt="Event 6">
+                        <p>Christmas Function 2023-24</p>
+                    </div>
+                    <!-- Add more photos as needed -->
+                </div>
+            </div>
+
+            <div id="videoGallery" class="tab-content" style="padding-bottom: 60px; padding-top: 60px;">
+                <div class="gallery">
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="videos/event1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Inauguration And Opening Of Junior Wing Block</p>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="videos/event2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Workshop On Rewards And Recognition</p>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="videos/event3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Retirement Function</p>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="videos/event4.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>CISCE Badminton Zonal Level Tournament 2024</p>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="videos/event5.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Investiture Ceremony 2024-25</p>
+                    </div>
+                    <div class="gallery-item">
+                        <video controls>
+                            <source src="videos/event6.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                        <p>Christmas Function 2023-24</p>
+                    </div>
+                    <!-- Add more videos as needed -->
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
