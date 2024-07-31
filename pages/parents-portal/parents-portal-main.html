@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Parent Portal</title>
+    <!-- Linking the external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
+        <!-- Navigation bar with links to different sections -->
         <div class="navbar">
             <a href="#" onclick="showTab('home')">Home</a>
             <a href="#" onclick="showTab('payFees')">Pay Fees</a>
@@ -19,10 +21,12 @@
             <a href="#" onclick="showTab('contactUs')">Contact Us</a>
         </div>
 
+        <!-- Home tab content -->
         <div id="home" class="tab-content active">
             <h2>Welcome to the Parent Portal</h2>
             <h3 style="text-align: center;">Student Details</h3>
             <div class="student-info">
+                <!-- Student photo and details -->
                 <img src="../../School site/icons/school-student.jpg" alt="Student Photo">
                 <h3>John Doe</h3>
                 <div class="student-details">
@@ -34,8 +38,10 @@
             </div>
         </div>
 
+        <!-- Pay Fees tab content -->
         <div id="payFees" class="tab-content">
             <h2>Pay Fees</h2>
+            <!-- Form to enter student details before paying fees -->
             <form onsubmit="showCreditCardDetails(); return false;">
                 <label for="admissionNumber">Admission Number</label>
                 <input type="text" id="admissionNumber" name="admissionNumber" required>
@@ -66,6 +72,7 @@
                 <button type="submit">Next</button>
             </form>
 
+            <!-- Credit card details form to pay fees -->
             <div id="creditCardDetails" class="credit-card-details">
                 <form>
                     <label for="amount">Amount to Pay</label>
@@ -85,8 +92,10 @@
             </div>
         </div>
 
+        <!-- View Performance tab content -->
         <div id="viewPerformance" class="tab-content">
             <h2>View Performance</h2>
+            <!-- Form to select class and exam type to view performance -->
             <div class="form-group">
                 <label for="classPerformance">Select Class</label>
                 <select id="classPerformance" name="classPerformance" onchange="showExamType(this.value)" required>
@@ -105,6 +114,7 @@
                     <option value="class12">Class 12</option>
                 </select>
             </div>
+            <!-- Exam type dropdown that appears after selecting a class -->
             <div class="form-group" id="examTypeGroup" style="display:none;">
                 <label for="examType">Select Exam Type</label>
                 <select id="examType" name="examType" onchange="showReportCard()" required>
@@ -116,11 +126,14 @@
                     <option value="Finals">Finals</option>
                 </select>
             </div>
+            <!-- Container for displaying the report card -->
             <div id="reportCard" style="margin-top: 20px;"></div>
         </div>
 
+        <!-- Upload Document tab content -->
         <div id="uploadDocument" class="tab-content">
             <h2>Upload Document</h2>
+            <!-- Form to upload documents for a student -->
             <form>
                 <label for="admissionNumber">Verify Admission Number</label>
                 <input type="text" id="admissionNumber" name="admissionNumber" required>
@@ -147,8 +160,10 @@
             </form>
         </div>
 
+        <!-- My Ledger tab content -->
         <div id="myLedger" class="tab-content">
             <h2>My Ledger</h2>
+            <!-- Ledger table to show financial transactions -->
             <div class="ledger">
                 <table class="ledger-table">
                     <thead>
@@ -184,16 +199,16 @@
             </div>
         </div>
 
+        <!-- Contact Us tab content -->
         <div id="contactUs" class="tab-content">
             <h2>Contact Us</h2>
             <p>If you have any questions, please contact us at <a
                     href="mailto:support@schoolportal.com">support@schoolportal.com</a>.</p>
         </div>
     </div>
+    <!-- Including external JavaScript libraries and scripts -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script-main-page.js"></script>
-
-
 </body>
 
 </html>

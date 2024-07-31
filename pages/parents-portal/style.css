@@ -1,247 +1,397 @@
+/* Styling for the body element */
 body {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../School site/icons/parents-portal-body.png");
+    /* Add a gradient and background image */
     background-size: cover;
+    /* Ensure the background image covers the entire area */
     background-position: center;
+    /* Center the background image */
     background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
     background-attachment: fixed;
+    /* Fix the background image in place */
     margin: 0;
+    /* Remove default margin */
     padding: 0;
+    /* Remove default padding */
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* Set font family */
     height: 100vh;
+    /* Full viewport height */
     overflow: hidden;
+    /* Hide overflow */
 }
 
+/* Styling for the container element */
 .container {
     max-width: 75%;
+    /* Maximum width set to 75% of the viewport */
     margin: 80px auto;
+    /* Center horizontally and add top margin */
     padding: 20px;
+    /* Add padding */
     box-sizing: border-box;
+    /* Include padding and border in element's total width and height */
     background: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white background */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     border-radius: 10px;
+    /* Rounded corners */
     overflow-y: auto;
+    /* Enable vertical scrolling */
     max-height: calc(100% - 100px);
+    /* Max height adjusted to fit within viewport */
 }
 
+/* Styling for headings (h2) */
 h2 {
     text-align: center;
+    /* Center align text */
     color: #333;
+    /* Dark grey color */
 }
 
+/* Styling for form elements */
 form {
     display: flex;
     flex-direction: column;
+    /* Arrange children in a column */
     background: rgba(255, 255, 255, 0.8);
-    /* Translucent background */
+    /* Semi-transparent white background */
     padding: 20px;
+    /* Add padding */
     border-radius: 10px;
+    /* Rounded corners */
     height: auto;
     /* Adjust height based on content */
 }
 
+/* Styling for labels */
 label {
     margin-bottom: 5px;
+    /* Add bottom margin */
     color: #333;
-    /* Darkened grey text */
+    /* Dark grey text */
 }
 
+/* Styling for input, select, button, and textarea elements */
 input,
 select,
 button,
 textarea {
     padding: 10px;
+    /* Add padding */
     margin-bottom: 15px;
+    /* Add bottom margin */
     border: 1px solid #ddd;
+    /* Light grey border */
     border-radius: 5px;
+    /* Rounded corners */
     font-size: 16px;
+    /* Font size */
 }
 
+/* Additional styling for textarea elements */
 textarea {
     resize: vertical;
+    /* Allow vertical resizing */
     height: 100px;
+    /* Set height */
     width: 96%;
     /* Span the width of the form */
 }
 
+/* Styling for button elements */
 button {
     background-color: #248439;
+    /* Green background color */
     color: #fff;
+    /* White text color */
     border: none;
+    /* Remove border */
     cursor: pointer;
+    /* Pointer cursor on hover */
     margin-top: 10px;
-    /* Add margin to the top for better spacing */
+    /* Add top margin */
 }
 
+/* Styling for button elements on hover */
 button:hover {
     background-color: #1d5c35;
+    /* Darker green background color */
 }
 
+/* Styling for link container */
 .link {
     text-align: center;
+    /* Center align text */
     margin-top: 20px;
+    /* Add top margin */
 }
 
+/* Styling for links */
 .link a {
     color: #259658;
+    /* Green color */
     text-decoration: none;
+    /* Remove underline */
 }
 
+/* Styling for links on hover */
 .link a:hover {
     text-decoration: underline;
+    /* Add underline on hover */
 }
 
+/* Styling for the navbar */
 .navbar {
     display: flex;
+    /* Arrange children in a row */
     justify-content: center;
+    /* Center align children */
     background-color: #74c379;
+    /* Light green background color */
     padding: 10px;
+    /* Add padding */
     border-radius: 0;
+    /* No border radius */
     position: fixed;
+    /* Fix the navbar at the top */
     color: black;
+    /* Black text color */
     top: 0;
+    /* Position at the top */
     left: 0;
+    /* Position at the left */
     width: 100%;
+    /* Full width */
     margin: 0;
+    /* Remove margin */
     z-index: 1000;
+    /* Ensure it stays on top */
 }
 
+/* Styling for navbar links */
 .navbar a {
     color: black;
+    /* Black text color */
     text-decoration: none;
+    /* Remove underline */
     padding-top: 6px;
+    /* Add top padding */
     margin-left: 35px;
+    /* Add left margin */
     padding-bottom: 6px;
+    /* Add bottom padding */
 }
 
+/* Styling for navbar links on hover */
 .navbar a:hover {
     background-color: #2e9b4e;
+    /* Darker green background color */
 }
 
+/* Styling for tab content */
 .tab-content {
     display: none;
+    /* Hide by default */
 }
 
+/* Styling for active tab content */
 .tab-content.active {
     display: block;
+    /* Display when active */
 }
 
+/* Styling for student info section */
 .student-info {
     display: flex;
+    /* Arrange children in a column */
     flex-direction: column;
+    /* Arrange children in a column */
     align-items: center;
+    /* Center align children */
     text-align: center;
+    /* Center align text */
     margin-bottom: 20px;
+    /* Add bottom margin */
 }
 
+/* Styling for student image */
 .student-info img {
     border-radius: 50%;
+    /* Circular image */
     width: 150px;
+    /* Set width */
     height: 150px;
+    /* Set height */
     margin-bottom: 15px;
+    /* Add bottom margin */
 }
 
+/* Styling for student details section */
 .student-details {
     text-align: left;
+    /* Left align text */
 }
 
+/* Styling for paragraphs inside student details section */
 .student-details p {
     margin: 5px 0;
+    /* Add vertical margin */
 }
 
+/* Styling for credit card details section */
 .credit-card-details {
     display: none;
+    /* Hide by default */
     margin-top: 20px;
+    /* Add top margin */
 }
 
+/* Styling for ledger section */
 .ledger {
     margin-top: 20px;
+    /* Add top margin */
 }
 
+/* Styling for ledger table */
 .ledger-table {
     width: 100%;
+    /* Full width */
     border-collapse: collapse;
+    /* Collapse borders */
 }
 
+/* Styling for table headers and cells */
 .ledger-table th,
 .ledger-table td {
     border: 1px solid #ddd;
+    /* Light grey border */
     padding: 8px;
+    /* Add padding */
     text-align: left;
+    /* Left align text */
 }
 
+/* Styling for table headers */
 .ledger-table th {
     background-color: #f2f2f2;
+    /* Light grey background color */
 }
 
-/* Hide Scrollbar but allow scrolling */
+/* Hide scrollbar but allow scrolling */
 .container::-webkit-scrollbar {
     width: 0;
+    /* Set width to 0 */
     background: transparent;
+    /* Transparent background */
 }
 
+/* Hide scrollbar for IE and Edge */
 .container {
     -ms-overflow-style: none;
-    /* IE and Edge */
-    scrollbar-width: none;
-    /* Firefox */
 }
 
+/* Hide scrollbar for Firefox */
+.container {
+    scrollbar-width: none;
+}
+
+/* Styling for form group */
 .form-group {
     margin-bottom: 20px;
+    /* Add bottom margin */
 }
 
+/* Styling for remarks section */
 .remarks {
     background: #f9f9f9;
+    /* Light grey background color */
     border: 1px solid #ddd;
+    /* Light grey border */
     padding: 15px;
+    /* Add padding */
     border-radius: 5px;
+    /* Rounded corners */
     margin-top: 20px;
+    /* Add top margin */
 }
 
+/* Styling for remarks heading */
 .remarks h4 {
     margin-top: 0;
+    /* Remove top margin */
     color: #555;
+    /* Dark grey color */
 }
 
+/* Styling for parent comments section */
 .parent-comments {
     background: #f9f9f9;
+    /* Light grey background color */
     border: 1px solid #ddd;
+    /* Light grey border */
     padding: 15px;
+    /* Add padding */
     border-radius: 5px;
+    /* Rounded corners */
     margin-top: 20px;
+    /* Add top margin */
 }
 
+/* Styling for parent comments heading */
 .parent-comments h4 {
     margin-top: 0;
+    /* Remove top margin */
     color: #555;
+    /* Dark grey color */
 }
 
+/* Styling for performance graph section */
 .performance-graph {
     margin-top: 20px;
+    /* Add top margin */
 }
 
+/* Styling for performance graph heading */
 .performance-graph h4 {
     margin-top: 0;
+    /* Remove top margin */
     color: #555;
+    /* Dark grey color */
 }
 
+/* Styling for marks table */
 .marks-table {
     width: 100%;
+    /* Full width */
     border-collapse: collapse;
+    /* Collapse borders */
     margin-top: 20px;
+    /* Add top margin */
 }
 
+/* Styling for marks table headers and cells */
 .marks-table th,
 .marks-table td {
     border: 1px solid #ddd;
+    /* Light grey border */
     padding: 8px;
+    /* Add padding */
     text-align: left;
+    /* Left align text */
 }
 
+/* Styling for marks table headers */
 .marks-table th {
     background-color: #f2f2f2;
+    /* Light grey background color */
 }
 
+/* Styling for marks table cells */
 .marks-table td {
     background-color: #fff;
+    /* White background color */
 }

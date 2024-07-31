@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
+    <!-- Linking the external JavaScript file (though there seems to be a typo, it should be "src" instead of "href") -->
     <link rel="script" href="script.js">
     <style>
+        /* Basic styling for the body */
         body {
             margin: 0;
             padding: 0;
@@ -14,13 +16,14 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../School\ site/icons/parents-portal-body.png");
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../School site/icons/parents-portal-body.png");
             background-repeat: no-repeat;
             background-size: cover;
             background-position: 50%;
             font-family: Arial, sans-serif;
         }
 
+        /* Styling for the login container */
         .login-container {
             background: #ffffff;
             padding: 40px;
@@ -31,6 +34,7 @@
             justify-content: center;
         }
 
+        /* Styling for the heading inside the login container */
         .login-container h2 {
             margin-bottom: 20px;
             font-size: 24px;
@@ -38,16 +42,19 @@
             text-align: center;
         }
 
+        /* Styling for the form groups */
         .form-group {
             margin-bottom: 20px;
         }
 
+        /* Styling for the labels inside form groups */
         .form-group label {
             display: block;
             margin-bottom: 5px;
             color: #555;
         }
 
+        /* Styling for the input fields inside form groups */
         .form-group input {
             width: 100%;
             padding: 10px;
@@ -56,11 +63,13 @@
             box-sizing: border-box;
         }
 
+        /* Styling for the input fields when they are focused */
         .form-group input:focus {
             border-color: #33965e;
             outline: none;
         }
 
+        /* Styling for the login button */
         .login-btn {
             width: 100%;
             padding: 10px;
@@ -73,20 +82,24 @@
             transition: background-color 0.3s;
         }
 
+        /* Styling for the login button when hovered */
         .login-btn:hover {
             background-color: #2c754b;
         }
 
+        /* Styling for the form footer */
         .form-footer {
             margin-top: 20px;
             text-align: center;
         }
 
+        /* Styling for the links inside the form footer */
         .form-footer a {
             color: #007bff;
             text-decoration: none;
         }
 
+        /* Styling for the links inside the form footer when hovered */
         .form-footer a:hover {
             text-decoration: underline;
         }
@@ -94,48 +107,56 @@
 </head>
 
 <body>
-    
+
     <div class="login-container" style="display: flex;">
         <div style="display:table-row; text-align: center; padding-right: 50px; margin-top: 12%">
-                    <img src="../../School site/school-logo.png" alt="school-img" style="height: 50px;"> 
-                    <h2>Parents Portal</h2>
-                </div>
+            <!-- School logo image and portal heading -->
+            <img src="../../School site/school-logo.png" alt="school-img" style="height: 50px;">
+            <h2>Parents Portal</h2>
+        </div>
         <form id="loginform" method="post">
-        
+            <!-- Email input field -->
             <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" name="email" required>
             </div>
+            <!-- Password input field -->
             <div class="form-group">
                 <label for="password">Password</label>
                 <input type="password" id="password" name="password" required>
             </div>
+            <!-- Login button -->
             <button type="submit" class="login-btn">Login</button>
+            <!-- Forgot password link -->
             <div class="form-footer">
                 <a href="#">Forgot Password?</a>
             </div>
         </form>
     </div>
 
+    <script>
+        // Adding an event listener to the form submission
+        document.getElementById('loginform').addEventListener('submit', function (event) {
+            // Preventing the default form submission
+            event.preventDefault();
+            // Getting the values from the email and password input fields
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
 
-<script>
-        document.getElementById('loginform').addEventListener('submit', function () {
-                event.preventDefault()
-                var email = document.getElementById('email').value;
-                var password = document.getElementById('password').value;
+            // Hardcoded valid email and password for demonstration purposes
+            var validEmail = "gurkamal@gmail.com";
+            var validPassword = "1234";
 
-                var validEmail = "gurkamal@gmail.com";
-                var validPassword = "1234";
-
-                if (email === validEmail && password === validPassword) {
-                    window.location.href = "parents-portal-main.html";
-                } else {
-                    alert("Invalid email or password. Please try again.");
-                }
-            });
-        
-</script>
-
+            // Checking if the entered email and password match the valid ones
+            if (email === validEmail && password === validPassword) {
+                // Redirecting to the main portal page if the credentials are correct
+                window.location.href = "parents-portal-main.html";
+            } else {
+                // Alerting the user if the credentials are incorrect
+                alert("Invalid email or password. Please try again.");
+            }
+        });
+    </script>
 
 </body>
 

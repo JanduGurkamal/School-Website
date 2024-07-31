@@ -1,86 +1,148 @@
+/* Styling for the body element */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Set font family */
     background-color: #f7f7f7;
+    /* Light grey background color */
     margin: 0;
+    /* Remove default margin */
     padding: 0;
+    /* Remove default padding */
     height: 100vh;
+    /* Full viewport height */
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../School site/icons/parents-portal-body.png");
+    /* Add a gradient and background image */
     background-repeat: no-repeat;
+    /* Prevent the background image from repeating */
     background-position: center;
+    /* Center the background image */
     background-size: cover;
+    /* Ensure the background image covers the entire area */
 }
 
+/* Styling for the container element */
 .container {
     max-width: 1200px;
+    /* Maximum width set to 1200px */
     margin: 0 auto;
+    /* Center horizontally */
     padding: 20px;
+    /* Add padding */
 }
 
+/* Styling for the header section */
 .header {
     text-align: center;
+    /* Center align text */
     margin-bottom: 40px;
+    /* Add bottom margin */
 }
 
+/* Styling for the buttons in the header */
 .header .title-button {
     background-color: #248439;
+    /* Green background color */
     color: white;
+    /* White text color */
     border: none;
+    /* Remove border */
     padding: 10px 20px;
+    /* Add padding */
     font-size: 1.5em;
+    /* Increase font size */
     border-radius: 5px;
+    /* Rounded corners */
     cursor: pointer;
+    /* Pointer cursor on hover */
     margin: 5px;
+    /* Add margin */
 }
 
+/* Styling for the buttons in the header on hover */
 .header .title-button:hover {
     background-color: #1d5c35;
+    /* Darker green background color */
 }
 
+/* Styling for the tab content sections */
 .tab-content {
     display: none;
+    /* Hide by default */
     background-color: rgba(255, 255, 255, 0.742);
+    /* Semi-transparent white background */
     padding: 20px;
+    /* Add padding */
     border-radius: 10px;
+    /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     backdrop-filter: blur(10px);
+    /* Blur background behind the tab content */
 }
 
+/* Styling for the active tab content */
 .tab-content.active {
     display: block;
+    /* Display when active */
 }
 
+/* Styling for the gallery container */
 .gallery {
     display: flex;
+    /* Flexbox layout */
     flex-wrap: wrap;
+    /* Allow wrapping to multiple lines */
     gap: 20px;
+    /* Add gap between items */
     justify-content: center;
+    /* Center align items */
 }
 
+/* Styling for individual gallery items */
 .gallery-item {
     max-width: 300px;
+    /* Maximum width set to 300px */
     text-align: center;
+    /* Center align text */
     border: 1px solid #ddd;
+    /* Light grey border */
     border-radius: 10px;
+    /* Rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
     overflow: hidden;
+    /* Hide overflow */
     background-color: #fff;
+    /* White background color */
     transition: transform 0.3s ease;
+    /* Smooth transition for transform */
 }
 
+/* Styling for images and videos within gallery items */
 .gallery-item img,
 .gallery-item video {
     width: 100%;
+    /* Full width */
     height: auto;
+    /* Automatic height */
     display: block;
+    /* Display as block element */
 }
 
+/* Styling for paragraphs within gallery items */
 .gallery-item p {
     margin: 10px 0;
+    /* Vertical margin */
     padding: 0 10px;
+    /* Horizontal padding */
     font-size: 1em;
+    /* Font size */
     color: #333;
+    /* Dark grey color */
 }
 
+/* Styling for gallery items on hover */
 .gallery-item:hover {
     transform: scale(1.05);
+    /* Scale up slightly */
 }
