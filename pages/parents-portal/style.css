@@ -184,11 +184,14 @@ button:hover {
     /* Add left margin */
     padding-bottom: 6px;
     /* Add bottom padding */
+    transition: all 0.3s ease;
+    transform: scale(1);
+    /* Initial scale */
 }
 
 /* Styling for navbar links on hover */
 .navbar a:hover {
-    background-color: #2e9b4e;
+    transform: scale(1.1);
     /* Darker green background color */
 }
 
