@@ -15,6 +15,44 @@
 
     <title>Sacred Heart School, Moga</title>
     <!-- Sets the title of the webpage -->
+    <style>
+        #thoughtButton {
+            position: fixed;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: left top;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            z-index: 1000000;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        #thoughtOfDay {
+            position: fixed;
+            left: -100%;
+            top: 0;
+            width: 300px;
+            height: 100%;
+            background-color: rgba(249, 249, 249, 0.82);
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+            overflow-y: auto;
+            transition: left 0.5s ease, background-color 0.5s ease;
+            padding: 20px;
+            z-index: 999999;
+        }
+
+        #thoughtOfDay h2 {
+            margin-top: 50px;
+        }
+
+        .show-thought {
+            left: 0 !important;
+        }
+    </style>
 </head>
 
 <body id="bd">
@@ -296,6 +334,16 @@
     </footer>
     <hr style="background-color: grey; height: 5px;">
     <!-- FOOTER SECTION END -->
+
+    <!-- Thought of the Day Button -->
+    <div id="thoughtButton" onclick="toggleThought()">Thought of the Day</div>
+
+    <!-- Thought of the Day Section -->
+    <div id="thoughtOfDay">
+        <h2>Thought of the Day</h2>
+        <br>
+        <p>"Education is the most powerful weapon which you can use to change the world." - Nelson Mandela</p>
+    </div>
 </body>
 <script src="script.js"></script>
 <!-- Links the external JavaScript file for functionality -->
@@ -304,6 +352,11 @@
 <script>
     AOS.init();
     <!-- Initializes the AOS library -->
+</script>
+<script>
+    function toggleThought() {
+        document.getElementById('thoughtOfDay').classList.toggle('show-thought');
+    }
 </script>
 
 </html>
